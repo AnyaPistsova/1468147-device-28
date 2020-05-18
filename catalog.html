@@ -28,7 +28,6 @@
 
     <main>
         <h1>Моноподы для селфи</h1>
-        <!-- Часть, не входящая в задание «Начинаем разметку» -->
         <section>
             <ol>
                 <li><a href="index.html">Главная</a></li>
@@ -36,26 +35,50 @@
                 <li><a>Моноподы для селфи</a></li>
             </ol>
         </section>
+        <div>
+            <form>
+                <h2>Сортировка:</h2>
+                <ul>
+                    <li><button href="">По цене</button></li>
+                    <li><button href="">По типу</button></li>
+                    <li><button href="">По популярными</button></li>
+                </ul>
+            </form>
+            <nav>
+                <button href="">&#9650;</a>
+                    <button href="">&#9660;</a>
+            </nav>
+        </div>
         <aside>
-            <h2>Выбор фильтров</h2>
-            <!-- Часть, не входящая в задание «Начинаем разметку» -->
-            <div class="">
-                <ul>Цвет
-                    <li>Черный</li>
-                    <li>Белый</li>
-                    <li>Синий</li>
-                    <li>Красный</li>
-                    <li>Розовый</li>
-                </ul>
-            </div>
-            <div class="">
-                <ul> Bluetooth
-                    <li>Есть</li>
-                    <li>Нет</li>
-                </ul>
-            </div>
+            <form>
+                <h2>Фильтр</h2>
+                <!--В "стоимости" небольшая самодеятельность-->
+                <span>
+                    <h3>Стоимость</h3>
+                    <input type="range" id="value" name="value" min="0" max="9000">
+                    <label for="value">Стоимость</label>
+                </span>
+                <span>
+                    <h3>Цвет</h3>
+                    <ul>
+                        <li>Черный</li>
+                        <li>Белый</li>
+                        <li>Синий</li>
+                        <li>Красный</li>
+                        <li>Розовый</li>
+                    </ul>
+                </span>
+                <span>
+                    <h3>Bluetooth</h3>
+                    <ul>
+                        <li>Есть</li>
+                        <li>Нет</li>
+                    </ul>
+                </span>
+            </form>
             <a href="">Показать</a>
         </aside>
+
         <h2>Товары на странице</h2>
         <ul>
             <li><img src="" alt="Любительская селфи-палка">
@@ -77,6 +100,15 @@
                 <span>4 900 руб.</span>
             </li>
         </ul>
+        <form>
+            <a href="">Назад</a>
+            <ol>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+            </ol>
+            <a href="">Вперед</a>
+        </form>
     </main>
 
     <footer class="">
@@ -87,7 +119,9 @@
             <li><a href="">Сравнить</a></li>
             <li><a href="">Корзина</a></li>
         </ul>
-        <p>г. Москва, ул. Строителей, 15</p>
+        <p>
+        <address>г. Москва, ул. Строителей, 15</address>
+        </p>
         <ul>
             <li><a href="">Доставка</a></li>
             <li><a href="">Гарантия</a></li>
