@@ -10,17 +10,17 @@
 
 <body>
     <header class="header">
-        <nav>
+        <nav class="nav">
             <section class="header-settings">
-                <a><img src="img/logo-device.svg" width="163" height="35" alt="Логотип сайта «DEVICE»"></a>
+                <a href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="Логотип сайта «DEVICE»"></a>
                 <form action="https://echo.htmlacademy.ru/courses" method="get">
                     <p class="search-field">
-                        <label for="search-field" class="visually-hidden"><input type="search" name="search"
+                        <label for="search-field"><input type="search" name="search"
                                 id="search-field" placeholder="Поиск по сайту"></label>
                     </p>
                 </form>
                 <a href="">Валентин Петухов</a>
-                <a href="">Выйти</a>
+                <a href="" class="log-out">Выйти</a>
                 <a href="">Сравнить</a>
                 <a href="">Корзина</a>
             </section>
@@ -54,12 +54,12 @@
         <div class="sorting-line-menu">
             <h2>Сортировка:</h2>
             <ul>
-                <li><a>По цене</a></li>
+                <li><a class="visited">По цене</a></li>
                 <li><a href="">По типу</a></li>
                 <li><a href="">По популярными</a></li>
             </ul>
             <ol>
-                <li><a>&#9650;</a></li>
+                <li><a class="visited">&#9650;</a></li>
                 <li><a href="">&#9660;</a></li>
             </ol>
         </div>
@@ -68,10 +68,10 @@
                 <div class="filter-sorting-line">
                     <h2>Фильтр</h2>
                 </div>
-                <fieldset>
-                    <div class="legend">Стоимость</div>
+                <fieldset class="fieldset">
+                    <legend>Стоимость</legend>
                 </fieldset>
-                <fieldset>
+                <fieldset class="fieldset">
                     <legend>Цвет</legend>
                     <p>
                         <label for="color-black">Черный<input type="checkbox" name="color-field" id="color-black"
@@ -94,7 +94,7 @@
                                 value="pink"></label>
                     </p>
                 </fieldset>
-                <fieldset>
+                <fieldset class="fieldset">
                     <legend>Bluetooth</legend>
                     <p>
                         <label for="bluetooth-yes">Есть<input type="radio" name="bluetooth" id="bluetooth-yes"
@@ -105,7 +105,7 @@
                                 value="no"></label>
                     </p>
                 </fieldset>
-                <button type="submit">Показать</button>
+                <button type="submit" class="button button-submit">Показать</button>
             </form>
         </aside>
 
@@ -131,16 +131,16 @@
                 <span class="products-price">4 900 руб.</span>
             </li>
         </ul>
-        <div class="back-forward-menu">
-            <span class="back">
+        <div class="pagination">
+            <span class="turn-lists">
                 <a>Назад</a>
             </span>
             <ol class="lists">
-                <li><a>1</a></li>
+                <li><a class="visited">1</a></li>
                 <li><a href="">2</a></li>
                 <li><a href="">3</a></li>
             </ol>
-            <span class="forward">
+            <span class="turn-lists">
                 <a href="">Вперед</a>
             </span>
         </div>
