@@ -8,21 +8,22 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <header class="header">
+<body class="page-body">
+    <header class="header container">
         <nav class="nav">
             <div class="header-logo">
-                <a class="header-logo-link visited"><img src="img/logo-device.svg" width="163" height="35" alt="Логотип сайта «DEVICE»"></a></div>
+                <a class="header-logo-link visited"><img src="img/logo-device.svg" width="163" height="35"
+                        alt="Логотип сайта «DEVICE»"></a></div>
             <section class="header-settings">
-                <form action="https://echo.htmlacademy.ru/courses" method="get">
-                    <p class="search-field">
-                        <label for="search-field"><input type="search" name="search" id="search-field"
+                <form class="header-search" action="https://echo.htmlacademy.ru/courses" method="get">
+                    <p>
+                        <label><input class="header-search" type="search" name="search" id="search-field"
                                 placeholder="Поиск по сайту"></label>
                     </p>
                 </form>
                 <a class="login-nav" href="">Войти</a>
                 <a class="compare-nav" href="">Сравнить</a>
-                <a href="basket-nav">Корзина</a>
+                <a class="basket-nav" href="">Корзина</a>
             </section>
             <ul class="catalog-list">
                 <li class="catalog"><a href="">Каталог товаров</a>
@@ -42,9 +43,9 @@
         </nav>
     </header>
 
-    <main class="page-body">
+    <main class="">
         <h1 class="visually-hidden">Главная страница магазина DEVICE</h1>
-        <div class="slider">
+        <div class="slider container">
             <article class="about-product">
                 <h2 class="visually-hidden">Про селфи-палку</h2>
                 <img src="img/slider-1.png" width="384" height="486" alt="Cелфи-палкa">
@@ -169,7 +170,7 @@
                             alt="Логотип VIVE"></a></li>
             </ul>
         </section>
-        <div class="about-contacts">
+        <div class="about-contacts container">
             <section class="about-us">
                 <h2>О нас</h2>
                 <p class="about-advantages">
@@ -193,8 +194,8 @@
                     Вы можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы сможете
                     проверить работоспособность покупки. Всякое бывает.
                 </p>
-                <a class="map" href="https://www.google.ru/maps/place/ул.+Строителей,+15,+Москва"><img src="img/map.png" width="560"
-                        height="222" alt="карта офиса по адресу г. Москва, ул. Строителей, 15"></a>
+                <a class="map" href="https://www.google.ru/maps/place/ул.+Строителей,+15,+Москва"><img src="img/map.png"
+                        width="560" height="222" alt="карта офиса по адресу г. Москва, ул. Строителей, 15"></a>
             </section>
             <section class="contact-us">
                 <a href="" class="button button-contacts">Напишите нам</a>
@@ -218,30 +219,36 @@
     </main>
 
     <footer class="footer">
-        <section class="footer-menu footer-menu-index">
-            <a class="footer-login" href="">Войти</a>
-            <a class="footer-compare" href="">Сравнить</a>
-            <a class="footer-basket" href="">Корзина</a>
-        </section>
-        <a class="footer-logo"><img src="img/e-logo.svg" width="163" height="35" alt="Логотип сайта «DEVICE»"></a>
-        <div class="footer-nav">
-            <address class="address">г. Москва, ул. Строителей, 15</address>
-            <ul class="footer-list">
-                <li class="list"><a href="">Доставка</a></li>
-                <li class="list"><a href="">Гарантия</a></li>
-                <li class="list"><a href="">Контакты</a></li>
-            </ul>
-            <span class="tel">
-                <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-            </span>
-        </div>
-        <div class="footer-links">
-            <ul class="socialmedia-logo">
-                <li><a href="">Фейсбук</a></li>
-                <li><a href="">Инстаграм</a></li>
-                <li><a href="">Твиттер</a></li>
-            </ul>
-            <a class="HTML-A-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="Логотип HTML Academy"></a>
+        <div class="container">
+            <section class="footer-menu">
+                <a class="visited footer-logo"><img src="img/e-logo.svg" width="163" height="35"
+                        alt="Логотип сайта «DEVICE»"></a>
+                <div class="footer-settings">
+                    <a class="footer-login" href="">Войти</a>
+                    <a class="footer-compare" href="">Сравнить</a>
+                    <a class="footer-basket" href="">Корзина</a>
+                </div>
+            </section>
+
+            <div class="footer-nav">
+                <address class="address">г. Москва, ул. Строителей, 15</address>
+                <ul class="footer-list">
+                    <li class="list"><a href="">Доставка</a></li>
+                    <li class="list"><a href="">Гарантия</a></li>
+                    <li class="list"><a href="">Контакты</a></li>
+                </ul>
+                <span class="tel">
+                    <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+                </span>
+            </div>
+            <div class="footer-links">
+                <ul class="socialmedia-logo">
+                    <li><a href="">Фейсбук</a></li>
+                    <li><a href="">Инстаграм</a></li>
+                    <li><a href="">Твиттер</a></li>
+                </ul>
+                <a class="HTML-A-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="Логотип HTML Academy"></a>
+            </div>
         </div>
     </footer>
 </body>
