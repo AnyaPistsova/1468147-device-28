@@ -384,6 +384,15 @@ ol, ul {
 /* Catalog start */
 
 .body-catalog {
+
+}
+
+
+.main-catalog {
+
+}
+
+.background-wrapper {
   background: linear-gradient(to right,
   var(--basic-grey-light) 32.5%, var(--basic-white) 32.5% 100%);
   -webkit-background-size: cover;
@@ -392,13 +401,6 @@ ol, ul {
   background-size: cover;
 }
 
-.background-wrapper {
-
-}
-
-.main-catalog {
-
-}
 
 .main-info-catalog {
   width: 100%;
