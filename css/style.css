@@ -98,7 +98,6 @@ ol, ul {
   margin-left: auto;
   margin-right: auto;
   width: 1160px;
-  align-items: center;
 }
 
 .header {
@@ -343,18 +342,8 @@ ol, ul {
   letter-spacing: 0.2em;
 }
 
-.about-delivery {
-  font-family: "Gilroy";
-  font-weight: 800;
-  margin-top: 20px;
-  margin-bottom: 86px;
-  font-size: 16px;
-  line-height: 28px;
-}
-
-.abilities-description {
-  line-height: 28px;
-  letter-spacing: 0.1em;
+.about-contacts p, ul {
+  margin: 0;
 }
 
 .about-contacts {
@@ -364,8 +353,34 @@ ol, ul {
   justify-content: space-between;
 }
 
+.about-delivery {
+  padding-bottom: 85px;
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.about-delivery li {
+  padding-bottom: 20px;
+}
+
+.about-delivery li:last-child {
+  padding-bottom: 0;
+}
+
+.abilities-description {
+  padding-top: 50px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+}
+
 .about-advantages {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+
+.about-advantages-delivery {
+  padding-bottom: 60px;
 }
 
 .about-us {
@@ -373,6 +388,8 @@ ol, ul {
 }
 
 .map {
+  display: block;
+  padding-bottom: 85px;
   width: 560px;
   height: 222px;
 }
@@ -381,16 +398,11 @@ ol, ul {
 
 /* Catalog start */
 
-.breadcrumbs-wrapper {
-  padding-left: 60px;
-}
-
-.breadcrumbs-menu ol {
+.breadcrumbs-wrapper ol {
   padding: 0;
 }
 
 .sort-grid {
-  width: 100%;
   display: grid;
   grid-template-columns: 32.5% 67.5%;
 }
@@ -401,7 +413,6 @@ ol, ul {
 }
 
 .aside-grid {
-  width: 100%;
   display: grid;
   grid-template-columns: 32.5% 67.5%;
 }
@@ -412,18 +423,16 @@ ol, ul {
 }
 
 .filter-sorting-line {
-  order: 1;
   background: var(--special-grey-lighten);
 }
 
 .sorting-line-menu {
-  order: 2;
   background: var(--basic-grey-light);
 }
 
 .main-catalog h1,
 .catalog-products,
-.fieldset legend {
+.filter-menu legend {
   font-family: "Gilroy";
   font-weight: 800;
 }
@@ -443,9 +452,9 @@ ol, ul {
   text-transform: uppercase;
 }
 
-.breadcrumbs-menu a,
+.breadcrumbs-wrapper a,
 .sorting-line-menu a,
-.fieldset p {
+.filter-menu p {
   font-size: 14px;
   line-height: 19px;
 }
@@ -455,11 +464,11 @@ ol, ul {
   color: var(--basic-black);
 }
 
-.breadcrumbs-menu a:active {
+.breadcrumbs-wrapper a:active {
   opacity: 0.1;
 }
 
-.breadcrumbs-menu a,
+.breadcrumbs-wrapper a,
 .sorting-line-menu a,
 .lists a,
 .turn-lists:active {
@@ -467,7 +476,7 @@ ol, ul {
   opacity: 0.3;
 }
 
-.breadcrumbs-menu a:hover,
+.breadcrumbs-wrapper a:hover,
 .sorting-line-menu a:hover,
 .lists a:hover {
   opacity: 0.6;
@@ -490,25 +499,28 @@ a.visited, a.visited:hover, a.visited:active {
   border: 0;
 }
 
-.fieldset legend {
+.filter-menu legend {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
 }
 
 .filter-menu {
-  padding-left: 60px;
   padding-right: 68px;
   grid-column: 1;
   align-self: start;
   background: var(--basic-grey-light);
 }
 
-.filter-content {
+.filter-menu form {
   padding-top: 70px;
 }
 
-.filedset-color {
+.fieldset-value {
+  padding-bottom: 38px;
+}
+
+.fieldset-color {
   padding-bottom: 40px;
 }
 
@@ -517,20 +529,19 @@ a.visited, a.visited:hover, a.visited:active {
 }
 
 .products {
+  padding-top: 70px;
+  padding-left: 72px;
   background: var(--basic-white);
   grid-column: 2;
 }
 
 .product-wrapper {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: baseline;
 }
 
 .catalog-products {
-  padding-top: 70px;
-  padding-left: 72px;
   letter-spacing: 0.05em;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -649,27 +660,31 @@ a.visited, a.visited:hover, a.visited:active {
 
 .footer-basket {
   width: 100px;
+  text-align: end;
 }
 
 .footer-nav {
   display: flex;
   justify-content: space-between;  
-  align-items: center;
+  align-items: baseline;
 }
 
 .footer-nav {
   padding-top: 40px;
 }
 
-.footer-nav {
-  flex-grow: 1;
+.footer-links {
+  padding-top: 67px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.socialmedia-logo {
-  text-align: center;
+.socialmedia-logo { 
+  width: 50%;
+} 
+
+.socialmedia-logo a {
+  padding-right: 20px;
 }
 
-.htmla-logo {
-  text-align: end;
-}
 /* footer end */
