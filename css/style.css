@@ -144,7 +144,10 @@ ol, ul {
 
 .header-user-nav {
   width: 25%;
-  justify-content: space-between;
+}
+
+.header-user {
+  padding-right: 20px;
 }
 
 .header-search {
@@ -160,20 +163,14 @@ ol, ul {
   line-height: 20px;
   background-color: transparent;
   border: 0;
+  -webkit-box-shadow: inset 0 0 0 50px var(--special-yellow-light);
 }
 
-.header-search:hover {
-  color: red; /* в процессе */
-}
-
-.header-search:focus {
-  color: var(--basic-black);
-  background-color: transparent;
-}
-
-.header-search:active {
-  color: var(--basic-black);
-  background-color: transparent;
+.header-search input:hover,
+.header-search input:active, 
+.header-search input:focus,
+.header-search input:focus-within {
+  outline: none;
 }
 
 .catalog-list {
@@ -250,7 +247,6 @@ ol, ul {
 
 .headline,
 .range-list,
-.about-delivery
 .abilities-list h2,
 .about-us h2 {
   font-family: "Gilroy";
@@ -348,6 +344,8 @@ ol, ul {
 }
 
 .about-delivery {
+  font-family: "Gilroy";
+  font-weight: 800;
   margin-top: 20px;
   margin-bottom: 86px;
   font-size: 16px;
@@ -383,28 +381,44 @@ ol, ul {
 
 /* Catalog start */
 
-.body-catalog {
-
+.breadcrumbs-wrapper {
+  padding-left: 60px;
 }
 
-
-.main-catalog {
-
+.breadcrumbs-menu ol {
+  padding: 0;
 }
 
-.background-wrapper {
-  background: linear-gradient(to right,
-  var(--basic-grey-light) 32.5%, var(--basic-white) 32.5% 100%);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-
-.main-info-catalog {
+.sort-grid {
   width: 100%;
   display: grid;
+  grid-template-columns: 32.5% 67.5%;
+}
+
+.sort-background-wrapper {
+  background: linear-gradient(to right,
+  var(--special-grey-lighten) 50%, var(--basic-grey-light) 50% 100%);
+}
+
+.aside-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 32.5% 67.5%;
+}
+
+.filter-background-wrapper {
+  background: linear-gradient(to right,
+  var(--basic-grey-light) 50%, var(--basic-white) 50% 100%);
+}
+
+.filter-sorting-line {
+  order: 1;
+  background: var(--special-grey-lighten);
+}
+
+.sorting-line-menu {
+  order: 2;
+  background: var(--basic-grey-light);
 }
 
 .main-catalog h1,
@@ -427,10 +441,6 @@ ol, ul {
   font-size: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-}
-
-.breadcrumbs-menu, .main-catalog h1 {
-  padding-left: 60px;
 }
 
 .breadcrumbs-menu a,
@@ -469,28 +479,11 @@ a.visited, a.visited:hover, a.visited:active {
   opacity: 1;
 }
 
-.breadcrumbs-wrapper {
-
-
-}
-
 .filter-menu,
 .sorting-line-menu,
 .turn-lists:hover,
 .turn-lists:active {
   background: var(--basic-grey-light);
-}
-
-.sorting-line-menu {
-  grid-column: 2;
-  grid-row: 1;
-  background: var(--basic-grey-light);
-}
-
-.filter-sorting-line {
-  grid-column: 1;
-  grid-row: 1;
-  background: var(--special-grey-lighten);
 }
 
 .filter-menu fieldset {
@@ -507,7 +500,7 @@ a.visited, a.visited:hover, a.visited:active {
   padding-left: 60px;
   padding-right: 68px;
   grid-column: 1;
-  grid-row: 2;
+  align-self: start;
   background: var(--basic-grey-light);
 }
 
@@ -526,10 +519,18 @@ a.visited, a.visited:hover, a.visited:active {
 .products {
   background: var(--basic-white);
   grid-column: 2;
-  grid-row: 2;
+}
+
+.product-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .catalog-products {
+  padding-top: 70px;
+  padding-left: 72px;
   letter-spacing: 0.05em;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -540,23 +541,16 @@ a.visited, a.visited:hover, a.visited:active {
 .catalog-products h3 {
   font-size: 18px;
   line-height: 22px;
-  width: 276px;
+  width: 76.5%;
 }
 
 .products-price {
   white-space: pre-line;
-}
-
-.products-price {
   font-weight: 300;
+  width: 33.5%;
   font-size: 16px;
   line-height: 18px;
-}
-
-.product-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  text-align: end;
 }
 
 .pagination {
@@ -574,6 +568,12 @@ a.visited, a.visited:hover, a.visited:active {
   background-color: var(--basic-dark)
 }
 
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
 .footer-list a {
   font-family: "Gilroy";
   font-weight: 800;
@@ -589,6 +589,11 @@ a.visited, a.visited:hover, a.visited:active {
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
+}
+
+.footer-settings {
+  display: flex;
+  align-items: flex-start;
 }
 
 .footer-settings a,
@@ -621,16 +626,16 @@ a.visited, a.visited:hover, a.visited:active {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  align-content: space-between;
 }
 
 .footer-login {
   width: 100px;
-  padding-top: 18px;
-  padding-right: 38px;
 }
 
 .footer-log-out {
   width: 224px;
+  padding-right: 39px;
 }
 
 .log-out {
