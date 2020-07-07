@@ -16,15 +16,15 @@
             <section class="header-settings">
                 <form class="header-search" action="https://echo.htmlacademy.ru/courses" method="get">
                     <p>
-                        <label><input class="header-search" type="search" name="search" id="search-field"
+                        <label><input type="search" name="search" id="search-field"
                                 placeholder="Поиск по сайту"></label>
                     </p>
                 </form>
                 <div class="header-user-index">
-                    <a href="">Войти</a>
+                    <a class="log-in" href="">Войти</a>
                     <div class="compare-basket">
-                        <a href="">Сравнить</a>
-                        <a href="">Корзина</a>
+                        <a class="compare" href="">Сравнить</a>
+                        <a class="basket" href="">Корзина</a>
                     </div>
                 </div>
             </section>
@@ -128,12 +128,12 @@
         <section class="range container">
             <h2 class="visually-hidden">Ассортимент товаров</h2>
             <ul class="range-list">
-                <li><a href="catalog-virtual-reality.html">Виртуальная реальность</a></li>
-                <li><a href="catalog-selfie-monopods.html">Моноподы для селфи</a></li>
-                <li><a href="catalog-action-camera.html">Экшн-камеры</a></li>
-                <li><a href="catalog-fitness-bracelet.html">Фитнес-браслеты</a></li>
-                <li><a href="catalog-smart-watch.html">Умные часы</a></li>
-                <li><a href="catalog-quadrocopters.html">Квадрокоптеры</a></li>
+                <li class="catalog-virtual-reality"><a href="catalog-virtual-reality.html">Виртуальная реальность</a></li>
+                <li class="catalog-selfie-monopods"><a href="catalog-selfie-monopods.html">Моноподы для селфи</a></li>
+                <li class="catalog-action-camera"><a href="catalog-action-camera.html">Экшн-камеры</a></li>
+                <li class="catalog-fitness-bracelet"><a href="catalog-fitness-bracelet.html">Фитнес-браслеты</a></li>
+                <li class="catalog-smart-watch"><a href="catalog-smart-watch.html">Умные часы</a></li>
+                <li class="catalog-quadrocopters"><a href="catalog-quadrocopters.html">Квадрокоптеры</a></li>
             </ul>
         </section>
         <div class="abilities-wrapper">
@@ -146,7 +146,7 @@
                 <div>
                     <article class="abilities-list">
                         <h2><a href="">Доставка</a></h2>
-                        <p class="abilities-description">
+                        <p class="abilities-description list-delivery">
                             Мы с&nbsp;удовольствием доставим ваш&nbsp;товар прямо к&nbsp;вашему
                             подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо
                             заработаем, поднимая его на&nbsp;ваш&nbsp;этаж.
@@ -154,7 +154,7 @@
                     </article>
                     <article class="abilities-list visually-hidden">
                         <h2><a href="">Гарантия</a></h2>
-                        <p class="abilities-description">
+                        <p class="abilities-description list-garanty">
                             Если из-за возгорания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом &mdash;
                             не&nbsp;переживайте, мы&nbsp;выдадим вам&nbsp;новый.
                             Товар, не&nbsp;дом, конечно&nbsp;же.
@@ -162,7 +162,7 @@
                     </article>
                     <article class="abilities-list visually-hidden">
                         <h2><a href="">Кредит</a></h2>
-                        <p class="abilities-description">
+                        <p class="abilities-description list-credit">
                             Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты
                             подберут для&nbsp;вас наиболее выгодные
                             условия кредита. Выгодные для&nbsp;нашего банка, разумеется.
@@ -185,49 +185,58 @@
             </ul>
         </section>
         <div class="about-contacts container">
-            <section class="about-us">
-                <h2>О нас</h2>
-                <p class="about-advantages">
-                    Огромный выбор гаджетов не&nbsp;оставит равнодушным гика,
-                    который есть в&nbsp;каждом из&nbsp;нас.
-                </p>
-                <p class="about-advantages-delivery">
-                    Мы можем доставить ваш товар в&nbsp;самые отдаленные
-                    точки России! DEVICE работает со&nbsp;многими транспортными компаниями:
-                </p>
-                <ul class="about-delivery">
-                    <li><a href="https://www.dellin.ru">Деловые линии </a> </li>
-                    <li><a href="http://www.autotrading.ru">Автотрейдинг</a></li>
-                    <li><a href="https://www.jde.ru">ЖелдорЭкспедиция</a></li>
-                </ul>
-                <a href="" class="button button-contacts">Подробнее о нас</a>
-            </section>
-            <section class="about-us">
-                <h2>Контакты</h2>
-                <p class="about-advantages">
-                    Вы можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы сможете
-                    проверить работоспособность покупки. Всякое бывает.
-                </p>
-                <a class="map" href="https://www.google.ru/maps/place/ул.+Строителей,+15,+Москва"><img src="img/map.png"
-                        width="560" height="222" alt="карта офиса по адресу г. Москва, ул. Строителей, 15"></a>
-                <a href="" class="button button-contacts">Напишите нам</a>
-            </section>
-            <section class="contact-us">
+            <div class="about-us-flex-wrapper">
+                <section class="about-us">
+                    <h2>О нас</h2>
+                    <p class="about-advantages">
+                        Огромный выбор гаджетов не&nbsp;оставит равнодушным гика,
+                        который есть в&nbsp;каждом из&nbsp;нас.
+                    </p>
+                    <p class="about-advantages-delivery">
+                        Мы можем доставить ваш товар в&nbsp;самые отдаленные
+                        точки России! DEVICE работает со&nbsp;многими транспортными компаниями:
+                    </p>
+                    <ul class="about-delivery">
+                        <li><a href="https://www.dellin.ru">Деловые линии </a> </li>
+                        <li><a href="http://www.autotrading.ru">Автотрейдинг</a></li>
+                        <li><a href="https://www.jde.ru">ЖелдорЭкспедиция</a></li>
+                    </ul>
+                    <a href="" class="button button-contacts">Подробнее о нас</a>
+                </section>
+                <section class="about-us">
+                    <h2>Контакты</h2>
+                    <p class="about-advantages">
+                        Вы можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы сможете
+                        проверить работоспособность покупки. Всякое бывает.
+                    </p>
+                    <a class="map" href="https://www.google.ru/maps/place/ул.+Строителей,+15,+Москва"><img
+                            src="img/map.png" width="560" height="222"
+                            alt="карта офиса по адресу г. Москва, ул. Строителей, 15"></a>
+                    <a href="" class="button button-contacts">Напишите нам</a>
+                </section>
+            </div>
+            <section class="contact-us button-wrapper">
                 <form action="https://echo.htmlacademy.ru/courses" method="post">
-                    <p>
-                        <label for="name-field">Ваше имя:<input type="text" name="name" id="name-field"
-                                placeholder="Имя Фамилия"></label>
+                    <div>
+                        <p class="contact-name-field">
+                            <label for="name-field">Ваше имя:</label><input class="contact-input" type="text" name="name"
+                                    id="name-field" placeholder="Имя Фамилия" pattern="\s [A-Za-zА-Яа-яЁё]">
+                        </p>
+                        <p class="contact-email-field">
+                            <label for="email-field">Ваш e-mail:</label><input class="contact-input" type="email" name="email"
+                                    id="email-field" placeholder="email@example.com">
+                        </p>
+                    </div>
+                    <p class="contact-letter-field">
+                        <label for="letter-field">Текст письма:</label><textarea class="contact-input" name="letter"
+                                id="letter-field" rows="6" placeholder="В свободной форме"></textarea>
                     </p>
-                    <p>
-                        <label for="email-field">Ваш e-mail:<input type="email" name="email" id="email-field"
-                                placeholder="email@example.com"></label>
-                    </p>
-                    <p>
-                        <label for="letter-field">Текст письма:<textarea name="letter" id="letter-field" rows="6"
-                                placeholder="В свободной форме"></textarea></label>
-                    </p>
-                    <button type="submit">Отправить</button>
+                    <button class="button button-popup" type="submit">Отправить</button>
                 </form>
+            </section>
+            <section class="big-map button-wrapper">
+                <a href="https://www.google.ru/maps/place/ул.+Строителей,+15,+Москва"><img src="img/map-big.png" width="960" height="559"
+                alt="карта офиса по адресу г. Москва, ул. Строителей, 15"></a>
             </section>
         </div>
     </main>
@@ -238,12 +247,11 @@
                 <a class="visited footer-logo"><img src="img/e-logo.svg" width="163" height="35"
                         alt="Логотип сайта «DEVICE»"></a>
                 <div class="footer-settings-index">
-                    <a class="footer-login" href="">Войти</a>
+                    <a class="footer-log-in" href="">Войти</a>
                     <a class="footer-compare" href="">Сравнить</a>
                     <a class="footer-basket" href="">Корзина</a>
                 </div>
             </section>
-
             <div class="footer-nav">
                 <address class="address">г. Москва, ул. Строителей, 15</address>
                 <ul class="footer-list">
@@ -257,12 +265,12 @@
             </div>
             <div class="footer-links">
                 <ul class="socialmedia-logo">
-                    <li><a href="">Фейсбук</a></li>
-                    <li><a href="">Инстаграм</a></li>
-                    <li><a href="">Твиттер</a></li>
+                    <li class="facebook"><a href=""><span class="visually-hidden">Фейсбук</span></a></li>
+                    <li class="instagram"><a href=""><span class="visually-hidden">Инстаграм</span></a></li>
+                    <li class="twitter"><a href=""><span class="visually-hidden">Твиттер</span></a></li>
                 </ul>
-                <a class="HTML-A-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="Логотип HTML Academy">Лого
-                    академии</a>
+                <a class="htmla-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="Логотип HTML Academy"><img
+                        src="img/logo-html.svg" width="27" height="34" alt=""></a>
             </div>
         </div>
     </footer>
