@@ -1981,31 +1981,31 @@ a.visited, a.visited:hover, a.visited:active {
 .footer-log-in::before {
   left: -1px;
   top: 4px;
-  background-image: url("../img/icon_user.svg");
+  background-image: url("../img/icon-user.svg");
 }
 
 .profile::before {
   left: 3px;
   top: 3px;
-  background-image: url("../img/icon_user.svg");
+  background-image: url("../img/icon-user.svg");
 }
 
 .footer-compare::before {
   left: 0px;
   top: 5px;
-  background-image: url("../img/icon_chart.svg");
+  background-image: url("../img/icon-chart.svg");
 }
 
 .footer-basket::before {
   left: 16px;
   top: 5px;
-  background-image: url("../img/icon_cart.svg");
+  background-image: url("../img/icon-cart.svg");
 }
 
 .footer-basket-catalog::before {
   left: 4px;
   top: 5px;
-  background-image: url("../img/icon_cart.svg");
+  background-image: url("../img/icon-cart.svg");
 }
 
 .social-link {
