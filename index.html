@@ -18,7 +18,7 @@
                     <p>
                         <label><input class="search-input" type="search" name="search" id="search-field"
                                 placeholder="Поиск по сайту"></label>
-                        <button type="submit" class="search-button">Найти</button>
+                        <button  class="search-button" type="submit">Найти</button>
                     </p>
                 </form>
                 <div class="header-user-list header-user-index">
@@ -166,9 +166,9 @@
         <div class="abilities-wrapper">
             <div class="abilities container-main">
                 <ul>
-                    <li><button autofocus type="button" class="button button-abilities">Доставка</button></li>
-                    <li class="on-garanty"><button type="button" class="button button-abilities">Гарантия</button></li>
-                    <li class="on-credit"><button type="button" class="button button-abilities">Кредит</button></li>
+                    <li><button autofocus class="button button-abilities active-button" type="button">Доставка</button></li>
+                    <li class="on-garanty"><button class="button button-abilities" type="button">Гарантия</button></li>
+                    <li class="on-credit"><button class="button button-abilities" type="button">Кредит</button></li>
                 </ul>
                 <div>
                     <article class="abilities-list list-delivery">
@@ -179,7 +179,7 @@
                             заработаем, поднимая его на&nbsp;ваш&nbsp;этаж.
                         </p>
                     </article>
-                    <article class="abilities-list list-garanty visually-hidden ">
+                    <article class="abilities-list list-garanty visually-hidden">
                         <h2><a href="">Гарантия</a></h2>
                         <p class="abilities-description">
                             Если из-за возгорания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом &mdash;
@@ -242,8 +242,8 @@
                     <a href="" class="button button-contacts">Напишите нам</a>
                 </section>
             </div>
-            <section class="contact-us for-close-button visually-hidden">
-                <form class="contact-form" action="https://echo.htmlacademy.ru/courses" method="post">
+            <section class="contact-us visually-hidden">
+                <form class="contact-form for-close-button" action="https://echo.htmlacademy.ru/courses" method="post">
                     <p class="contact-name-field contact-field">
                         <label for="name-field">Ваше имя:</label><input class="contact-input" type="text" name="name"
                             id="name-field" placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]">
@@ -257,11 +257,11 @@
                             id="letter-field" rows="6" placeholder="В свободной форме"></textarea>
                     </p>
                     <button class="button button-popup" type="submit">Отправить</button>
-                    <button class="button-close"></button>
                 </form>
+                <button class="button-close" type="button"></button>
             </section>
-            <section class="big-map for-close-button visually-hidden">
-                <a href="https://www.google.ru/maps/place/ул.+Строителей,+15,+Москва"><img src="img/map-big.png"
+            <section class="big-map visually-hidden">
+                <a class="for-close-button" href="https://www.google.ru/maps/place/ул.+Строителей,+15,+Москва"><img src="img/map-big.png"
                         width="960" height="559" alt="карта офиса по адресу г. Москва, ул. Строителей, 15"></a>
                 <button class="button-close button-close-map"></button>
             </section>

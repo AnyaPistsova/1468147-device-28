@@ -175,36 +175,6 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.button:hover, .button:active {
-  background: var(--special-yellow-dark);
-}
-
-.button:focus {
-  outline: none;
-}
-
-.button:active {
-  color: var(--special-black);
-}
-
-.button-abilities:active, .button-abilities:focus {
-  min-width: 277px;
-  padding-left: 20px;
-  text-align: left;
-  color: var(--special-yellow-light);
-  background: var(--basic-black);
-}
-
-.on-garanty .button-abilities:active,
-.on-garanty .button-abilities:focus {
-  padding-left: 24px;
-}
-
-.on-credit .button-abilities:active, 
-.on-credit .button-abilities:focus {
-  padding-left: 40px;
-}
-
 .button-slider {
   min-width: 185px;
   padding-left: 20px;
@@ -226,6 +196,43 @@ input[type="radio"].visually-hidden {
 
 .button-popup {
   min-width: 200px;
+}
+
+.button:hover, .button:active {
+  background: var(--special-yellow-dark);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  color: var(--special-black);
+}
+
+.button-abilities:active, 
+.button-abilities:focus,
+.active-button,
+.active-button:hover {
+  min-width: 277px;
+  padding-left: 20px;
+  text-align: left;
+  color: var(--special-yellow-light);
+  background: var(--basic-black);
+}
+
+.on-garanty .button-abilities:active,
+.on-garanty .button-abilities:focus {
+  padding-left: 24px;
+}
+
+.on-credit .button-abilities {
+  padding-left: 11px;
+}
+
+.on-credit .button-abilities:active, 
+.on-credit .button-abilities:focus {
+  padding-left: 40px;
 }
 
 /* classic buttons end */
@@ -298,6 +305,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 14px;
   padding-left: 38px;
   border: 0;
+  border-bottom: 2px solid var(--special-white-transparent);
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -391,7 +399,7 @@ input[type="radio"].visually-hidden {
 /* header start*/
 
 .header {
-  padding-bottom: 3px;
+  padding-bottom: 2px;
   padding-right: 60px;
   padding-left: 60px;
   margin-top: 20px;
@@ -425,6 +433,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 21px;
   display: flex;
   align-items: baseline;
+}
+
+.header-catalog .header-settings {
+  margin-bottom: 20px;
 }
 
 .header-user-list {
@@ -546,10 +558,10 @@ input[type="radio"].visually-hidden {
   width: 1040px;
   max-height: 158px;
   left: -60px;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -571,7 +583,7 @@ input[type="radio"].visually-hidden {
 }
  
 .catalog-menu li {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .catalog-menu li:nth-child(5) {
@@ -604,7 +616,7 @@ input[type="radio"].visually-hidden {
 .slider {
   padding-left: 60px;
   padding-right: 60px;
-  margin-bottom: 119px;
+  margin-bottom: 118px;
   position: relative;
   background: linear-gradient(to top, 
   var(--basic-white) 74%, var(--special-yellow-light) 74% 100%);
@@ -634,6 +646,10 @@ input[type="radio"].visually-hidden {
   padding-top: 23px;
   padding-left: 25px;
   margin-bottom: -18px;
+}
+
+.about-bracelet .headline {
+  margin-bottom: 9px;
 }
 
 .about-quadrocopter img {
@@ -704,7 +720,7 @@ input[type="radio"].visually-hidden {
 
 .about-quadrocopter .product-description,
 .about-selfie-stick .product-description {
-  margin-bottom: 45px;
+  margin-bottom: 47px;
 }
 
 .headline {
@@ -718,13 +734,12 @@ input[type="radio"].visually-hidden {
 
 .product-description {
   margin: 0px;
-  margin-bottom: 43px;
+  margin-bottom: 45px;
   white-space: pre-line;
 }
 
 .slider table {
   font-family: "Gilroy", "Arial", sans-serif;
-  letter-spacing: 0.1em;
   text-align: left;
   border-spacing: 0;
 }
@@ -733,9 +748,17 @@ input[type="radio"].visually-hidden {
   font-weight: 300;
   padding-top: 6px;
   padding-bottom: 3px;
-  padding-left: 1px;
+  padding-left: 2px;
   font-size: 36px;
   line-height: 42px;
+  letter-spacing: 0.1em;
+}
+
+.about-quadrocopter td {
+  padding-right: 40px;
+  padding-top: 6px;
+  font-size: 36px;
+  line-height: 42px
 }
 
 .slider th {
@@ -743,6 +766,7 @@ input[type="radio"].visually-hidden {
   padding-top: 14px;
   line-height: 15px;
   font-size: 13px;
+  letter-spacing: 0.1em;
 }
 
 .selfie-size {
@@ -760,7 +784,7 @@ input[type="radio"].visually-hidden {
 }
 
 .range {
-  margin-bottom: 63px;
+  margin-bottom: 61px;
 }
 
 .range-list {
@@ -778,7 +802,7 @@ input[type="radio"].visually-hidden {
 }
 
 .virtual-reality {
-  width: 136px;
+  width: 138px;
   padding-right: 63px;
 }
 
@@ -875,7 +899,7 @@ input[type="radio"].visually-hidden {
 .abilities {
   padding-top: 67px;
   padding-bottom: 122px;
-  margin-bottom: 90px;
+  margin-bottom: 91px;
   display: flex;
 }
 
@@ -921,10 +945,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
-.list-garanty h2 {
-  margin-bottom: 2px;
-}
-
 .abilities-list {
   padding-left: 123px;
   line-height: 28px;
@@ -945,7 +965,16 @@ input[type="radio"].visually-hidden {
 
 .abilities-description {
   padding-left: 16px;
-  margin: -16px;
+  margin: -15px;
+}
+
+.list-garanty h2 {
+  margin-bottom: -3px;
+}
+
+.list-garanty .abilities-description {
+  line-height: 30px;
+  margin-bottom: -21px;
 }
 
 .list-delivery::after {
@@ -1002,13 +1031,13 @@ input[type="radio"].visually-hidden {
 }
 
 .about-contacts h2 {
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   display: block;
 }
 
 .about-us ul {
   padding-left: 32px;
-  margin-bottom: 70px;
+  margin-bottom: 71px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -1042,11 +1071,11 @@ input[type="radio"].visually-hidden {
 }
 
 .for-delivery {
-  margin-bottom: 58px;
+  margin-bottom: 59px;
 }
 
 .for-advantages {
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 }
 
 .for-contacts {
@@ -1082,12 +1111,18 @@ input[type="radio"].visually-hidden {
 
 .contact-us {
   width: 760px;
+  top: 20%;
+  right: 0;
+  left: 0;
   padding-top: 82px;
   padding-bottom: 54px; 
   padding-left: 100px;
   padding-right: 100px;
+  margin: auto;
+  z-index: 10;
   position: fixed;
   box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+  background-color: var(--basic-white);
 }
 
 .contact-form {
@@ -1105,10 +1140,6 @@ input[type="radio"].visually-hidden {
   display: block;
   padding-left: 2px;
   margin-bottom: 9px;
-}
-
-.contact-us {
-  margin-bottom: 54px;
 }
 
 .contact-field input,
@@ -1175,10 +1206,15 @@ input[type="radio"].visually-hidden {
 .big-map {
   width: 960px;
   height: 559px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 10;
   position: fixed;
 }
 
-.button-wrapper,
 .for-close-button {
   position: relative;
 }
@@ -1260,20 +1296,13 @@ input[type="radio"].visually-hidden {
   width: 12px;
   height: 12px;
   top: 5px;
+  right: 0;
   content: "";
   background-image: url("../img/nav-arrow.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 1;
 }
-
-.index-link::after {
-  left: 67px;
-}
-
-.catalog-link::after {
-  left: 125px;
-} 
 
 .breadcrumbs-wrapper h1 {
   margin: 0;
@@ -1437,7 +1466,7 @@ a.visited, a.visited:hover, a.visited:active {
 }
 
 .filedset-color legend {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .fieldset-value legend {
@@ -1456,7 +1485,7 @@ a.visited, a.visited:hover, a.visited:active {
 }
 
 .filter-menu form {
-  padding-top: 69px;
+  padding-top: 70px;
 }
 
 .filter-menu p {
@@ -1474,7 +1503,7 @@ a.visited, a.visited:hover, a.visited:active {
 .products {
   padding-top: 70px;
   padding-left: 72px;
-  padding-bottom: 79px;
+  padding-bottom: 78px;
   background: var(--basic-white);
   grid-column: 2;
 }
@@ -1489,6 +1518,8 @@ a.visited, a.visited:hover, a.visited:active {
 
 .first-product {
   width: 350px;
+  padding-top: 8px;
+  padding-left: 3px;
 }
 
 .first-product .products-price {
@@ -1501,29 +1532,29 @@ a.visited, a.visited:hover, a.visited:active {
   margin-right: -5px;
 }
 
-.first-product h3 {
-  width: 285px;
+.second-product {
+  padding-top: 8px;
+}
+
+.third-product {
+  padding-top: 9px;
+}
+
+.forth-product {
+  padding-top: 8px;
   padding-left: 3px;
 }
 
-.second-product {
-  padding-top: 7px;
+.first-product h3 {
+  width: 285px;
 }
 
 .second-product h3 {
   width: 220px;
 }
 
-.third-product {
-  padding-top: 8px;
-}
-
 .third-product h3 {
-  width: 210px;
-}
-
-.forth-product {
-  padding-top: 8px;
+  width: 200px;
 }
 
 .forth-product h3 {
@@ -1558,15 +1589,16 @@ a.visited, a.visited:hover, a.visited:active {
 }
 
 .add-to-basket {
-  width: 200px;
-  top: -215px;
-  right: 82px;
+  width: 213px;
+  top: -213px;
+  right: 68px;
   display: none;
   position: absolute;
 }
 
 .add-to-compare {
-  margin-top: 22px;
+  padding-right: 13px;
+  margin-top: 14px;
   font-family: Open Sans, "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -1593,6 +1625,11 @@ a.visited, a.visited:hover, a.visited:active {
 
 .basket-wrapper:hover .add-to-compare:active {
   opacity: 0.2;
+}
+
+.first-product .add-to-basket {
+  top: -214px;
+  right: 59px;
 }
 
 .new::after {
@@ -1663,7 +1700,7 @@ a.visited, a.visited:hover, a.visited:active {
 .fieldset-value {
   padding: 0;
   border: none;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 }
 
 .range-controls {
@@ -1817,10 +1854,14 @@ a.visited, a.visited:hover, a.visited:active {
 }
 
 .footer-menu {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-content: space-between;
+}
+
+.footer-catalog .footer-menu {
+  margin-bottom: 18px;
 }
 
 .footer-settings-index {
@@ -1830,8 +1871,8 @@ a.visited, a.visited:hover, a.visited:active {
 }
 
 .footer-log-in {
-  width: 60px;
-  margin-right: 24px;
+  width: 66px;
+  margin-right: 21px;
 }
 
 .footer-compare-index {
@@ -1979,7 +2020,7 @@ a.visited, a.visited:hover, a.visited:active {
 }
 
 .footer-log-in::before {
-  left: -1px;
+  left: 2px;
   top: 4px;
   background-image: url("../img/icon-user.svg");
 }
