@@ -162,19 +162,23 @@ input[type="radio"].visually-hidden {
 
 .button {
   border: 0;
-  padding: 9px 15px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 15px;
+  padding-right: 15px ;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-align: center;
+  vertical-align: baseline;
+  display: inline-block;
   color: var(--basic-black);
   background: linear-gradient(to top, 
     var(--special-white-transparent) 40%, var(--special-yellow-dark) 40% 60%, 
     var(--special-white-transparent) 60% 100%);
-  display: inline-block;
-  text-align: center;
 }
 
 .button-slider {
@@ -220,6 +224,7 @@ input[type="radio"].visually-hidden {
   min-width: 277px;
   padding-left: 20px;
   text-align: left;
+  vertical-align: baseline;
   color: var(--special-yellow-light);
   background: var(--basic-black);
 }
@@ -249,16 +254,19 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 
-.slider-buttons {
-  width: 20%;
+.slider-buttons,
+.button-item {
   padding: 0;
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .button-item {
   margin-right: 14px;
-  padding: 0;
-  display: inline-block;
+}
+
+.slider-buttons {
+  width: 20%;
 }
 
 .button-item:last-child {
