@@ -26,7 +26,7 @@
   --special-white-transparent: rgba(255, 255, 255, 0);
 
   --shadow-grey: rgba(0, 0, 0, 0.18);
-  --shadow-grey-norm: rgba(0, 0, 0, 0.15);
+  --shadow-grey-normal: rgba(0, 0, 0, 0.15);
 
   --special-yellow-light: #F7E296;
   --special-yellow: #FFC600;
@@ -619,7 +619,7 @@ input[type="radio"].visually-hidden {
 .slider {
   padding-left: 60px;
   padding-right: 60px;
-  margin-bottom: 118px;
+  margin-bottom: 114px;
   position: relative;
   background: linear-gradient(to top, 
   var(--basic-white) 74%, var(--special-yellow-light) 74% 100%);
@@ -1054,7 +1054,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-contacts h2 {
-  margin-bottom: 16px;
+  margin-bottom: 9px;
   display: block;
 }
 
@@ -1144,7 +1144,7 @@ input[type="radio"].visually-hidden {
   margin: auto;
   z-index: 10;
   position: fixed;
-  box-shadow: 0px 10px 16px var(--shadow-grey-norm);
+  box-shadow: 0px 10px 16px var(--shadow-grey-normal);
   background-color: var(--basic-white);
 }
 
@@ -1512,7 +1512,7 @@ a.visited, a.visited:hover, a.visited:active {
 }
 
 .filter-menu p {
-  margin-bottom: 21px;
+  margin-bottom: 19px;
 }
 
 .filter-menu p:last-child {
@@ -1579,7 +1579,7 @@ a.visited, a.visited:hover, a.visited:active {
 }
 
 .third-product h3 {
-  width: 200px;
+  width: 272px;
 }
 
 .forth-product h3 {
@@ -1593,7 +1593,7 @@ a.visited, a.visited:hover, a.visited:active {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 40px;
-  grid-row-gap: 31px;
+  grid-row-gap: 27px;
 }
 
 .catalog-products h3 {
