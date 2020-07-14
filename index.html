@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <title>DEVICE</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.mini.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
     <header class="header container">
         <nav class="nav">
-            <a class="header-logo-link visited"><img src="img/logo-device.svg" width="163" height="35"
-                    alt="Логотип сайта «DEVICE»"></a>
+            <a class="header-logo-link visited">
+                <img src="img/logo-device.svg" width="163" height="35" alt="Логотип сайта «DEVICE»">
+            </a>
             <section class="header-settings">
                 <form class="header-search" action="https://echo.htmlacademy.ru/courses" method="get">
                     <p>
-                        <label><input class="search-input" type="search" name="search" id="search-field"
-                                placeholder="Поиск по сайту"></label>
-                        <button  class="search-button" type="submit">Найти</button>
+                        <label></label>
+                        <input class="search-input" type="search" name="search" id="search-field"
+                            placeholder="Поиск по сайту">
+                        <button class="search-button" type="submit">Найти</button>
                     </p>
                 </form>
                 <div class="header-user-list header-user-index">
@@ -28,19 +30,38 @@
                 </div>
             </section>
             <ul class="catalog-list">
-                <li><a class="catalog" href="">Каталог товаров</a>
+                <li>
+                    <a class="catalog" href="">Каталог товаров</a>
                     <ul class="catalog-menu">
-                        <li><a href="">Виртуальная реальность</a></li>
-                        <li><a href="catalog-selfie-monopods.html">Моноподы для селфи</a></li>
-                        <li><a href="">Экшн-камеры</a></li>
-                        <li><a href="">Фитнес-браслеты</a></li>
-                        <li><a href="">Умные часы</a></li>
-                        <li><a href="">Квадрокоптер</a></li>
+                        <li>
+                            <a href="">Виртуальная реальность</a>
+                        </li>
+                        <li>
+                            <a href="catalog-selfie-monopods.html">Моноподы для селфи</a>
+                        </li>
+                        <li>
+                            <a href="">Экшн-камеры</a>
+                        </li>
+                        <li>
+                            <a href="">Фитнес-браслеты</a>
+                        </li>
+                        <li>
+                            <a href="">Умные часы</a>
+                        </li>
+                        <li>
+                            <a href="">Квадрокоптер</a>
+                        </li>
                     </ul>
                 </li>
-                <li class="delivery"><a href="">Доставка</a></li>
-                <li class="guaranty"><a href="">Гарантия</a></li>
-                <li class="contacts"><a href="">Контакты</a></li>
+                <li class="delivery">
+                    <a href="">Доставка</a>
+                </li>
+                <li class="guaranty">
+                    <a href="">Гарантия</a>
+                </li>
+                <li class="contacts">
+                    <a href="">Контакты</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -63,9 +84,15 @@
                     <div class="buttons-container">
                         <a href="" class="button button-slider">Подробнее</a>
                         <ul class="slider-buttons">
-                            <li class="button-item"><button class="round-button active"></button></li>
-                            <li class="button-item"><button class="round-button"></button></li>
-                            <li class="button-item"><button class="round-button"></button></li>
+                            <li class="button-item">
+                                <button class="round-button active" aria-label="Перейти на первый слайд"></button>
+                            </li>
+                            <li class="button-item">
+                                <button class="round-button" aria-label="Перейти на второй слайд"></button>
+                            </li>
+                            <li class="button-item">
+                                <button class="round-button" aria-label="Перейти на третий слайд"></button>
+                            </li>
                         </ul>
                     </div>
                     <table>
@@ -97,9 +124,15 @@
                     <div class="buttons-container">
                         <a href="" class="button button-slider">Подробнее</a>
                         <ul class="slider-buttons">
-                            <li class="button-item"><button class="round-button"></button></li>
-                            <li class="button-item"><button class="round-button active"></button></li>
-                            <li class="button-item"><button class="round-button"></button></li>
+                            <li class="button-item">
+                                <button class="round-button"></button>
+                            </li>
+                            <li class="button-item">
+                                <button class="round-button active"></button>
+                            </li>
+                            <li class="button-item">
+                                <button class="round-button"></button>
+                            </li>
                         </ul>
                     </div>
                     <table>
@@ -127,9 +160,15 @@
                     <div class="buttons-container">
                         <a href="" class="button button-slider">Подробнее</a>
                         <ul class="slider-buttons">
-                            <li class="button-item"><button class="round-button"></button></li>
-                            <li class="button-item"><button class="round-button"></button></li>
-                            <li class="button-item"><button class="round-button active"></button></li>
+                            <li class="button-item">
+                                <button class="round-button"></button>
+                            </li>
+                            <li class="button-item">
+                                <button class="round-button"></button>
+                            </li>
+                            <li class="button-item">
+                                <button class="round-button active"></button>
+                            </li>
                         </ul>
                     </div>
                     <table>
@@ -148,31 +187,50 @@
         <section class="range container-main">
             <h2 class="visually-hidden">Ассортимент товаров</h2>
             <ul class="range-list">
-                <li class="range-item virtual-reality"><a class="catalog-virtual-reality range-item"
-                        href="catalog-virtual-reality.html">Виртуальная реальность</a></li>
-                <li class="range-item selfie-monopods"><a class="catalog-selfie-monopods range-item"
-                        href="catalog-selfie-monopods.html">Моноподы для селфи</a></li>
-                <li class="range-item action-camera"><a class="catalog-action-camera range-item"
-                        href="catalog-action-camera.html">Экшн-камеры</a></li>
-                <li class="range-item fitness-bracelet"><a class="catalog-fitness-bracelet range-item"
-                        href="catalog-fitness-bracelet.html">Фитнес-браслеты</a></li>
-                <li class="range-item smart-watch"><a class="catalog-smart-watch range-item"
-                        href="catalog-smart-watch.html">Умные
-                        часы</a></li>
-                <li class="range-item quadrocopters"><a class="catalog-quadrocopters range-item"
-                        href="catalog-quadrocopters.html">Квадрокоптеры</a></li>
+                <li class="range-item virtual-reality">
+                    <a class="catalog-virtual-reality range-item" href="catalog-virtual-reality.html">
+                        Виртуальная реальность</a>
+                </li>
+                <li class="range-item selfie-monopods">
+                    <a class="catalog-selfie-monopods range-item" href="catalog-selfie-monopods.html">
+                        Моноподы для селфи</a>
+                </li>
+                <li class="range-item action-camera">
+                    <a class="catalog-action-camera range-item" href="catalog-action-camera.html">
+                        Экшн-камеры</a>
+                </li>
+                <li class="range-item fitness-bracelet">
+                    <a class="catalog-fitness-bracelet range-item" href="catalog-fitness-bracelet.html">
+                        Фитнес-браслеты</a>
+                </li>
+                <li class="range-item smart-watch">
+                    <a class="catalog-smart-watch range-item" href="catalog-smart-watch.html">
+                        Умные часы</a>
+                </li>
+                <li class="range-item quadrocopters">
+                    <a class="catalog-quadrocopters range-item" href="catalog-quadrocopters.html">
+                        Квадрокоптеры</a>
+                </li>
             </ul>
         </section>
         <div class="abilities-wrapper">
             <div class="abilities container-main">
                 <ul>
-                    <li><button autofocus class="button button-abilities active-button" type="button">Доставка</button></li>
-                    <li class="on-garanty"><button class="button button-abilities" type="button">Гарантия</button></li>
-                    <li class="on-credit"><button class="button button-abilities" type="button">Кредит</button></li>
+                    <li>
+                        <button autofocus class="button button-abilities active-button" type="button">Доставка</button>
+                    </li>
+                    <li class="on-garanty">
+                        <button class="button button-abilities" type="button">Гарантия</button>
+                    </li>
+                    <li class="on-credit">
+                        <button class="button button-abilities" type="button">Кредит</button>
+                    </li>
                 </ul>
                 <div>
                     <article class="abilities-list list-delivery">
-                        <h2><a href="">Доставка</a></h2>
+                        <h2>
+                            <a href="">Доставка</a>
+                        </h2>
                         <p class="abilities-description">
                             Мы с&nbsp;удовольствием доставим ваш&nbsp;товар прямо к&nbsp;вашему
                             подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо
@@ -180,7 +238,9 @@
                         </p>
                     </article>
                     <article class="abilities-list list-garanty visually-hidden">
-                        <h2><a href="">Гарантия</a></h2>
+                        <h2>
+                            <a href="">Гарантия</a>
+                        </h2>
                         <p class="abilities-description">
                             Если из-за возгорания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом &mdash;
                             не&nbsp;переживайте, мы&nbsp;выдадим вам&nbsp;новый.
@@ -188,7 +248,9 @@
                         </p>
                     </article>
                     <article class="abilities-list list-credit visually-hidden">
-                        <h2><a href="">Кредит</a></h2>
+                        <h2>
+                            <a href="">Кредит</a>
+                        </h2>
                         <p class="abilities-description">
                             Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты
                             подберут для&nbsp;вас наиболее выгодные
@@ -201,14 +263,30 @@
         <section class="partners-logo container-main">
             <h2 class="visually-hidden">Логотипы партнеров</h2>
             <ul class="brands">
-                <li><a href="https://www.dji.com/"><img src="img/logo-1.png" width="260" height="110"
-                            alt="Логотип DJI"></a></li>
-                <li><a href="http://www.sp-gadgets.com/"><img src="img/logo-2.png" width="260" height="110"
-                            alt="Логотип SP Gadgets"></a></li>
-                <li><a href="https://gopro.ru/"><img src="img/logo-3.png" width="260" height="110"
-                            alt="Логотип GoPro"></a></li>
-                <li><a href="https://www.vive.com/"><img src="img/logo-4.png" width="260" height="110"
-                            alt="Логотип VIVE"></a></li>
+                <li>
+                    <a href="https://www.dji.com/">
+                        <img src="img/logo-1.png" width="260" height="110" alt="Логотип DJI"
+                            aria-label="Перейти в интернет-магазин DJI">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.sp-gadgets.com/">
+                        <img src="img/logo-2.png" width="260" height="110" alt="Логотип SP Gadgets"
+                            aria-label="Перейти в интернет-магазин SP Gadgets">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://gopro.ru/">
+                        <img src="img/logo-3.png" width="260" height="110" alt="Логотип GoPro"
+                            aria-label="Перейти в интернет-магазин GoPro">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.vive.com/">
+                        <img src="img/logo-4.png" width="260" height="110" alt="Логотип VIVE"
+                            aria-label="Перейти в интернет-магазин VIVE">
+                    </a>
+                </li>
             </ul>
         </section>
         <div class="about-contacts container-main">
@@ -224,9 +302,15 @@
                         России! DEVICE работает со&nbsp;многими транспортными компаниями:
                     </p>
                     <ul class="about-delivery">
-                        <li><a href="https://www.dellin.ru">Деловые линии </a> </li>
-                        <li><a href="http://www.autotrading.ru">Автотрейдинг</a></li>
-                        <li><a href="https://www.jde.ru">ЖелДорЭкспедиция</a></li>
+                        <li>
+                            <a href="https://www.dellin.ru">Деловые линии </a>
+                        </li>
+                        <li>
+                            <a href="http://www.autotrading.ru">Автотрейдинг</a>
+                        </li>
+                        <li>
+                            <a href="https://www.jde.ru">ЖелДорЭкспедиция</a>
+                        </li>
                     </ul>
                     <a href="" class="button button-contacts">Подробнее о нас</a>
                 </section>
@@ -236,33 +320,41 @@
                         Вы можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы сможете
                         проверить работоспособность покупки. Всякое бывает.
                     </p>
-                    <a class="map" href="https://www.google.ru/maps/place/ул.+Строителей,+15,+Москва"><img
-                            src="img/map.png" width="560" height="222"
-                            alt="карта офиса по адресу г. Москва, ул. Строителей, 15"></a>
-                    <a href="" class="button button-contacts">Напишите нам</a>
+                    <img class="map" src="img/map.png" width="560" height="222"
+                        alt="карта офиса по адресу г. Москва, ул. Строителей, 15" tabindex="0">
+                    <a href="" class="button button-contacts button-open">Напишите нам</a>
                 </section>
             </div>
-            <section class="contact-us visually-hidden">
+            <section class="contact-us">
                 <form class="contact-form for-close-button" action="https://echo.htmlacademy.ru/courses" method="post">
                     <p class="contact-name-field contact-field">
-                        <label for="name-field">Ваше имя:</label><input class="contact-input" type="text" name="name"
-                            id="name-field" placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]">
+                        <label for="name-field">Ваше имя:</label>
+                        <input class="contact-input name-input" type="text" name="name" id="name-field"
+                            placeholder="Имя Фамилия" pattern="^[А-Яа-яЁё\s]+$">
                     </p>
                     <p class="contact-email-field contact-field">
-                        <label for="email-field">Ваш e-mail:</label><input class="contact-input" type="email"
-                            name="email" id="email-field" placeholder="email@example.com">
+                        <label for="email-field">Ваш e-mail:</label>
+                        <input class="contact-input email-input" type="email" name="email" id="email-field"
+                            placeholder="email@example.com">
                     </p>
                     <p class="contact-letter-field">
-                        <label for="letter-field">Текст письма:</label><textarea class="contact-textarea" name="letter"
-                            id="letter-field" rows="6" placeholder="В свободной форме"></textarea>
+                        <label for="letter-field">Текст письма:</label>
+                        <textarea class="contact-textarea" name="letter" id="letter-field" rows="6"
+                            placeholder="В свободной форме"></textarea>
                     </p>
                     <button class="button button-popup" type="submit">Отправить</button>
                 </form>
                 <button class="button-close" type="button"></button>
             </section>
-            <section class="big-map visually-hidden">
-                <a class="for-close-button" href="https://www.google.ru/maps/place/ул.+Строителей,+15,+Москва"><img src="img/map-big.png"
-                        width="960" height="559" alt="карта офиса по адресу г. Москва, ул. Строителей, 15"></a>
+            <section class="big-map">
+                <a class="for-close-button" href="https://www.google.ru/maps/place/ул.+Строителей,+15,+Москва"
+                    aria-label="Открыть карту расположения офиса по адресу г. Москва, ул. Строителей, 15">
+                    <iframe class="map-inside" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125
+                    488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!
+                    1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-
+                    0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1594603227280!5m2!1sru!2sru" width="960" height="559"
+                        frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </a>
                 <button class="button-close button-close-map"></button>
             </section>
         </div>
@@ -271,8 +363,9 @@
     <footer class="footer">
         <div class="container-main">
             <section class="footer-menu">
-                <a class="visited footer-logo"><img src="img/e-logo.svg" width="163" height="35"
-                        alt="Логотип сайта «DEVICE»"></a>
+                <a class="visited footer-logo">
+                    <img src="img/e-logo.svg" width="163" height="35" alt="Логотип сайта «DEVICE»">
+                </a>
                 <div class="footer-settings-index">
                     <a class="footer-log-in footer-user-item" href="">Войти</a>
                     <a class="footer-compare-index footer-compare footer-user-item" href="">Сравнить</a>
@@ -282,9 +375,15 @@
             <div class="footer-nav">
                 <address class="address">г. Москва, ул. Строителей, 15</address>
                 <ul class="footer-list">
-                    <li class="list"><a href="">Доставка</a></li>
-                    <li class="list"><a href="">Гарантия</a></li>
-                    <li class="list"><a href="">Контакты</a></li>
+                    <li class="list">
+                        <a href="">Доставка</a>
+                    </li>
+                    <li class="list">
+                        <a href="">Гарантия</a>
+                    </li>
+                    <li class="list">
+                        <a href="">Контакты</a>
+                    </li>
                 </ul>
                 <span class="tel">
                     <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
@@ -292,15 +391,31 @@
             </div>
             <div class="footer-links">
                 <ul class="socialmedia-logo">
-                    <li class="facebook social-link"><a href=""><span class="visually-hidden">Фейсбук</span></a></li>
-                    <li class="instagram social-link"><a href=""><span class="visually-hidden">Инстаграм</span></a></li>
-                    <li class="twitter social-link"><a href=""><span class="visually-hidden">Твиттер</span></a></li>
+                    <li class="facebook social-link" tabindex="0">
+                        <a href="">
+                            <span class="visually-hidden">Фейсбук</span>
+                        </a>
+                    </li>
+                    <li class="instagram social-link" tabindex="0">
+                        <a href="">
+                            <span class="visually-hidden">Инстаграм</span></a>
+                    </li>
+                    <li class="twitter social-link" tabindex="0">
+                        <a href="">
+                            <span class="visually-hidden">Твиттер</span>
+                        </a>
+                    </li>
                 </ul>
-                <a class="htmla-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="Логотип HTML Academy"><img
-                        src="img/logo-html.svg" width="27" height="34" alt=""></a>
+                <a class="htmla-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+                    <img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy"
+                        aria-label="Перейти на страницу интенсива">
+                </a>
             </div>
         </div>
     </footer>
+
+    <script src="js/script.min.js"></script>
+
 </body>
 
 </html>
