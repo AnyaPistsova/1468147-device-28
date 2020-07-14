@@ -36,12 +36,16 @@ buttonopen.addEventListener("click", function (evt) {
 close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("contact-us-open");
+    popup.classList.remove("for-error");
 });
 
 form.addEventListener("submit", function (evt) {
     if (!namefield.value || !emailfield.value || !textfield.value) {
         evt.preventDefault();
         console.log("Заполните все поля");
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("for-error");
     } else {
         if (isStorageSupport) {
             localStorage.setItem("namefield", namefield.value);
@@ -55,6 +59,7 @@ window.addEventListener("keydown", function (evt) {
         if (popup && popup.classList.contains("contact-us-open")) {
             evt.preventDefault();
             popup.classList.remove("contact-us-open");
+            popup.classList.remove("for-error");
         }
     }
 });

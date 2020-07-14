@@ -11,14 +11,13 @@
 <body class="page-body body-catalog">
     <header class="header header-catalog container">
         <nav class="nav">
-            <a class="header-logo-link" href="index.html">
-                <img src="img/logo-device.svg" width="163" height="35" alt="Логотип сайта «DEVICE»"
-                    aria-label="Перейти на главную страницу">
+            <a class="header-logo-link" href="index.html" aria-label="Перейти на главную страницу">
+                <img src="img/logo-device.svg" width="163" height="35" alt="Логотип сайта «DEVICE»">
             </a>
             <section class="header-settings">
                 <form class="header-search" action="https://echo.htmlacademy.ru/courses" method="get">
                     <p>
-                        <label></label>
+                        <label for="search-field"></label>
                         <input class="search-input" type="search" name="search" id="search-field"
                             placeholder="Поиск по сайту">
                         <button class="search-button" type="submit">Найти</button>
@@ -131,11 +130,11 @@
                                     <div class="toggle toggle-max" tabindex="0"></div>
                                 </div>
                                 <div class="price-controls">
-                                    <label class="min-price">
-                                        от <input type="number" name="min-price" value="0">
+                                    <label for="min-price-field">
+                                        от <input type="number" name="min-price" id="min-price-field" value="0">
                                     </label>
-                                    <label class="max-price">
-                                        до <input type="number" name="max-price" value="5000">
+                                    <label for="max-price-field">
+                                        до <input type="number" name="max-price" id="max-price-field" value="5000">
                                     </label>
                                 </div>
                             </div>
@@ -145,7 +144,7 @@
                             <p class="fieldset-item color-item">
                                 <input class="checkbox-item visually-hidden" type="checkbox" name="color-field"
                                     id="color-black" value="black" checked>
-                                <label class="label" for="color-black" tabindex="0">Черный</label>
+                                <label class="label" for="color-black" tabindex="0"> Черный</label>
                             </p>
                             <p class="fieldset-item color-item">
                                 <input class="checkbox-item visually-hidden" type="checkbox" name="color-field"
@@ -272,9 +271,8 @@
     <footer class="footer footer-catalog">
         <div class="container-main">
             <section class="footer-menu">
-                <a class="footer-logo" href="index.html">
-                    <img src="img/e-logo.svg" width="163" height="35" alt="Логотип сайта «DEVICE»"
-                        aria-label="Перейти на главную страницу">
+                <a class="footer-logo" href="index.html" aria-label="Перейти на главную страницу">
+                    <img src="img/e-logo.svg" width="163" height="35" alt="Логотип сайта «DEVICE»">
                 </a>
                 <div class="footer-settings-catalog">
                     <div class="footer-log-out">
